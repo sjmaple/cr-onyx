@@ -130,7 +130,8 @@
       "authStatus": {
         "apiTokenDescription": "API token configured",
         "connectedDescription": "Connected",
-        "title": "Authenticated & Connected"
+        "title": "Authenticated & Connected",
+        "oauthDescription": "OAuth connected to {owner}"
       },
       "cancelButton": {
         "label": "Cancel"
@@ -158,7 +159,8 @@
       "serverUrl": {
         "invalid": "Must be a valid URL",
         "required": "Server URL is required",
-        "title": "MCP Server URL"
+        "title": "MCP Server URL",
+        "subDescription": "Only connect to servers you trust. You are responsible for actions taken with this connection and keeping your tools updated."
       },
       "submitButton": {
         "addLabel": "Add Server",
@@ -322,18 +324,22 @@
       },
       "authType": {
         "apiToken": {
-          "label": "API Key"
+          "label": "API Key",
+          "description": "Use per-user individual API key or organization-wide shared API key."
         },
         "label": "Authentication Method",
         "none": {
-          "label": "No authentication"
+          "label": "No authentication",
+          "description": "Not Recommended"
         },
         "oauth": {
-          "label": "OAuth"
+          "label": "OAuth",
+          "description": "Each user need to authenticate via OAuth with their own credentials."
         },
         "placeholder": "Select method",
         "ptOauth": {
-          "label": "OAuth Pass-through"
+          "label": "OAuth Pass-through",
+          "description": "Forward the user's OAuth access token used to authenticate {appName}."
         },
         "required": "Authentication type is required"
       },
@@ -364,7 +370,8 @@
         "clientRegistrationFailed": "Automatic client registration failed. Use your own OAuth client, or check the provider’s setup requirements.",
         "discoveryFailed": "OAuth sign-in settings could not be found. Check the server URL or enter the endpoints from your provider.",
         "connectionFailed": "The OAuth server could not be reached. Check the server URL and try again.",
-        "oauthFailed": "OAuth sign-in could not start. Check your client settings and try again."
+        "oauthFailed": "OAuth sign-in could not start. Check your client settings and try again.",
+        "oauthInitFailed": "Failed to initiate OAuth: {detail}"
       },
       "header": {
         "defaultTitle": "Configure authentication",
@@ -453,6 +460,13 @@
         "unreachableTitle": "Could not determine if automatic setup is available",
         "missingTitle": "Could not find OAuth endpoints",
         "requiresClientTitle": "Automatic setup may be unavailable"
+      },
+      "advanced": {
+        "description": "Configure a known OAuth provider with explicit authorization and token endpoints instead of automatic discovery.",
+        "title": "Advanced"
+      },
+      "knownProvider": {
+        "hint": "Known-provider mode requires endpoint configuration. Google reference endpoints: authorization {authorizationEndpoint} and token {tokenEndpoint}."
       }
     },
     "mcpCard": {
@@ -733,7 +747,9 @@
       },
       "credentials": {
         "perUserDescription": "Use your credentials to test this MCP and load its tools. They are saved to your account only.",
-        "sharedDescription": "These values are used for every user in your organization."
+        "sharedDescription": "These values are used for every user in your organization.",
+        "perUserTitle": "Only for your own account",
+        "sharedTitle": "Shared organization values"
       },
       "headers": {
         "addButton": {
@@ -2715,7 +2731,8 @@
         "reIndex": {
           "tooltip": {
             "indexing": "Cannot re-index while indexing is already in progress",
-            "invalid": "Fix the connector configuration before re-indexing"
+            "invalid": "Fix the connector configuration before re-indexing",
+            "paused": "Resume the connector before re-indexing"
           }
         },
         "toggleStatus": {
@@ -2780,6 +2797,91 @@
           "postProcessing": {
             "label": "Post-Processing"
           }
+        },
+        "stages": {
+          "batchLoad": {
+            "label": "Batch load"
+          },
+          "batchTotal": {
+            "label": "Batch total"
+          },
+          "batchUnaccounted": {
+            "label": "Unaccounted"
+          },
+          "checkpointLoad": {
+            "label": "Checkpoint load"
+          },
+          "chunking": {
+            "label": "Chunking"
+          },
+          "connectorFetch": {
+            "label": "Connector fetch"
+          },
+          "connectorValidation": {
+            "label": "Connector validation"
+          },
+          "contextualRag": {
+            "label": "Contextual RAG"
+          },
+          "coordLockAcquireWait": {
+            "label": "Coord lock acquire wait"
+          },
+          "coordinationUpdate": {
+            "label": "Coordination update"
+          },
+          "docBatchEnqueue": {
+            "label": "Doc batch enqueue"
+          },
+          "docBatchStore": {
+            "label": "Doc batch store"
+          },
+          "docDbPrepare": {
+            "label": "Doc DB prepare"
+          },
+          "docLockAcquireWait": {
+            "label": "Doc lock acquire wait"
+          },
+          "docprocessingSetup": {
+            "label": "Docprocessing setup"
+          },
+          "embedding": {
+            "label": "Embedding"
+          },
+          "enrichmentPrep": {
+            "label": "Enrichment prep"
+          },
+          "finalization": {
+            "label": "Finalization"
+          },
+          "gcCollect": {
+            "label": "Garbage collection"
+          },
+          "hierarchyUpsert": {
+            "label": "Hierarchy upsert"
+          },
+          "imageProcessing": {
+            "label": "Image processing"
+          },
+          "permissionValidation": {
+            "label": "Permission validation"
+          },
+          "postIndexDbUpdate": {
+            "label": "Post-index DB update"
+          },
+          "queueWait": {
+            "label": "Queue wait"
+          },
+          "vectorDbWrite": {
+            "label": "Vector DB write"
+          },
+          "embeddingRateLimitWait": {
+            "label": "Embedding rate limit wait",
+            "description": "Time embedding requests waited for the embedding rate limit set on Index Settings. Part of Embedding, summed over embedding threads."
+          },
+          "embeddingProviderThrottleWait": {
+            "label": "Embedding provider throttle wait",
+            "description": "Time embedding requests waited after the embedding provider rate-limited them. Part of Embedding, summed over embedding threads."
+          }
         }
       },
       "statusCard": {
@@ -2811,7 +2913,8 @@
           "released": "Indexing started",
           "releaseFailed": "Couldn't start indexing",
           "viewChecks": "View connector checks"
-        }
+        },
+        "title": "Indexing Status"
       },
       "toasts": {
         "completeReindexStarted": "Complete re-indexing started successfully",
@@ -2970,7 +3073,9 @@
           "indexed": "indexed",
           "synced": "synced",
           "removed": "removed",
-          "checksRun": "{count, plural, one {# check run} other {# checks run}}"
+          "checksRun": "{count, plural, one {# check run} other {# checks run}}",
+          "memberships": "memberships",
+          "checks": "checks run"
         },
         "counts": {
           "newDocs": "{count, plural, one {# new document} other {# new documents}}",
@@ -3015,7 +3120,8 @@
           "filteredTitle": "No runs match these filters.",
           "pastRuns": "{count, plural, one {# Past Run} other {# Past Runs}}",
           "view": "View",
-          "viewAria": "{count, plural, one {View # past run} other {View # past runs}}"
+          "viewAria": "{count, plural, one {View # past run} other {View # past runs}}",
+          "description": "Runs are scheduled in the background and may take a moment to appear."
         },
         "units": "{count, plural, one {run} other {runs}}",
         "errorModal": {
@@ -3055,7 +3161,8 @@
         "groups": {
           "failures": "{count, plural, =0 {Failures} one {# Failure} other {# Failures}}",
           "errors": "{count, plural, =0 {Errors} one {# Error} other {# Errors}}",
-          "other": "Other"
+          "other": "Other",
+          "resolved": "{count, plural, one {# Resolved} other {# Resolved}}"
         },
         "title": {
           "indexing": {
@@ -3129,7 +3236,8 @@
           "group_sync": "{count, plural, one {# group failed to sync} other {# groups failed to sync}}",
           "pruning": "{count, plural, one {# doc failed} other {# docs failed}}",
           "checks": "{count, plural, one {# check failed} other {# checks failed}}",
-          "resolved": "Resolved"
+          "resolved": "Resolved",
+          "resolvedDocs": "{count, plural, one {# doc resolved} other {# docs resolved}}"
         },
         "more": "Show more",
         "empty": {
@@ -3160,7 +3268,8 @@
         },
         "trace": {
           "header": "Stack Trace • Run ID: {id}",
-          "copy": "Copy the stack trace"
+          "copy": "Copy the stack trace",
+          "runId": "Run ID: {id}"
         },
         "actions": {
           "resolve": "Resolve"
@@ -3171,6 +3280,9 @@
           "description": "This marks {count, plural, one {# run} other {# runs}} that match the current filter resolved. They keep their status and move under resolved.",
           "fleetDescription": "This marks {count, plural, one {# run} other {# runs}} that match the current filter resolved, on the connectors you operate. They keep their status and move under resolved.",
           "confirm": "Resolve all"
+        },
+        "resolved": {
+          "label": "Resolved"
         }
       },
       "stageDetails": {
@@ -9579,7 +9691,9 @@
         "pruned": "Pruned",
         "checking": "Checking",
         "passed": "Completed",
-        "failedToRun": "Failed to run"
+        "failedToRun": "Failed to run",
+        "completedWithErrors": "Completed with errors",
+        "error": "Error"
       }
     },
     "systemInfo": {
@@ -9902,6 +10016,9 @@
       "field": {
         "required": {
           "error": "{label} is required"
+        },
+        "optional": {
+          "title": "{label} (Optional)"
         }
       },
       "loadError": {
@@ -10730,7 +10847,9 @@
       "failedToRun": "Checks failed to run. Try again.",
       "requiredFailed": "{count, plural, one {# required check failed} other {# required checks failed}}",
       "state": {
-        "inProgress": "Checks in progress..."
+        "inProgress": "Checks in progress...",
+        "completed": "Checks completed.",
+        "waiting": "Waiting for connector settings..."
       },
       "advisory": {
         "title": "Some content won't be indexed.",
@@ -10834,7 +10953,9 @@
           },
           "error": {
             "title": "The settings are not valid"
-          }
+          },
+          "blocks": "The new settings failed validation. Fix them before you apply.",
+          "warns": "Some optional checks failed. You can still apply."
         },
         "warnings": {
           "title": "Warnings"
@@ -14348,7 +14469,11 @@
           "description": "Choose what the agent may do. “Ask” requests approval before each action; “Auto-approve” runs without prompting.",
           "title": "Permissions"
         },
-        "savingButton": "Saving…"
+        "savingButton": "Saving…",
+        "advanced": {
+          "description": "Set a policy for each action individually.",
+          "title": "Advanced"
+        }
       },
       "skillsStep": {
         "description": "Optional — associate existing skills or create one for this app.",

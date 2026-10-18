@@ -1170,6 +1170,7 @@
       "title": "プラグイン",
       "description": "ツールやアプリをワークスペースに接続します。",
       "search": {
+        "hotkeyPlaceholder": "プラグインを検索、または \"/\" を押してフォーカス...",
         "placeholder": "プラグインを検索"
       },
       "add": {

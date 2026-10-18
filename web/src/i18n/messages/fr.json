@@ -14069,6 +14069,13 @@
         "projectId": "mon-projet-vertex",
         "location": "global"
       }
+    },
+    "searchField": {
+      "placeholder": "Rechercher ou appuyer sur \"/\" pour cibler..."
+    },
+    "searchNoResults": {
+      "title": "Aucun élément ne correspond à cette recherche",
+      "description": "Essayez d'affiner votre recherche ou de rechercher autre chose."
     }
   },
   "craft": {
@@ -15896,10 +15903,6 @@
     "tabs": {
       "scrollLeft": "Faire défiler les onglets vers la gauche",
       "scrollRight": "Faire défiler les onglets vers la droite"
-    },
-    "searchNoResults": {
-      "title": "Aucun élément ne correspond à cette recherche",
-      "description": "Essayez d'affiner votre recherche ou de rechercher autre chose."
     }
   },
   "settings": {

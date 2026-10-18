@@ -14069,6 +14069,13 @@
         "projectId": "my-vertex-project",
         "location": "global"
       }
+    },
+    "searchField": {
+      "placeholder": "Search or press \"/\" to focus..."
+    },
+    "searchNoResults": {
+      "title": "No items match that search",
+      "description": "Try refining your search or search for something else."
     }
   },
   "craft": {
@@ -15896,10 +15903,6 @@
     "tabs": {
       "scrollLeft": "Scroll tabs left",
       "scrollRight": "Scroll tabs right"
-    },
-    "searchNoResults": {
-      "title": "No items match that search",
-      "description": "Try refining your search or search for something else."
     }
   },
   "settings": {

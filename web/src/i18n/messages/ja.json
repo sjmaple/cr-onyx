@@ -466,8 +466,7 @@
         },
         "submitButton": {
           "label": "削除"
-        },
-        "title": "MCP サーバーを削除"
+        }
       },
       "lastRefreshed": {
         "label": "ツールの最終更新 {time}"
@@ -689,8 +688,7 @@
         },
         "submitButton": {
           "label": "削除"
-        },
-        "title": "OpenAPI アクションを削除"
+        }
       },
       "method": {
         "noSummary": "概要はありません"
@@ -1250,6 +1248,9 @@
           "title": "プラグインが見つかりません"
         },
         "externalAppsError": "アプリを読み込めませんでした"
+      },
+      "deleteModal": {
+        "title": "*{name}* を削除"
       }
     },
     "mcpSetup": {
@@ -5823,8 +5824,7 @@
           },
           "submitting": {
             "label": "削除しています…"
-          },
-          "title": "「{name}」を削除しますか？"
+          }
         },
         "editAction": {
           "label": "編集"

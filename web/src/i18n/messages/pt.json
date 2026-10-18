@@ -466,8 +466,7 @@
         },
         "submitButton": {
           "label": "Excluir"
-        },
-        "title": "Excluir servidor MCP"
+        }
       },
       "lastRefreshed": {
         "label": "Ferramentas atualizadas pela última vez {time}"
@@ -689,8 +688,7 @@
         },
         "submitButton": {
           "label": "Excluir"
-        },
-        "title": "Excluir ação OpenAPI"
+        }
       },
       "method": {
         "noSummary": "Nenhum resumo fornecido"
@@ -1250,6 +1248,9 @@
           "title": "Nenhum plugin encontrado"
         },
         "externalAppsError": "Não foi possível carregar os apps"
+      },
+      "deleteModal": {
+        "title": "Excluir *{name}*"
       }
     },
     "mcpSetup": {
@@ -5823,8 +5824,7 @@
           },
           "submitting": {
             "label": "Excluindo…"
-          },
-          "title": "Excluir “{name}”?"
+          }
         },
         "editAction": {
           "label": "Editar"

@@ -466,8 +466,7 @@
         },
         "submitButton": {
           "label": "Eliminar"
-        },
-        "title": "Eliminar el servidor MCP"
+        }
       },
       "lastRefreshed": {
         "label": "Herramientas actualizadas por última vez {time}"
@@ -689,8 +688,7 @@
         },
         "submitButton": {
           "label": "Eliminar"
-        },
-        "title": "Eliminar la acción de OpenAPI"
+        }
       },
       "method": {
         "noSummary": "No se proporcionó ningún resumen"
@@ -1250,6 +1248,9 @@
           "title": "No se encontraron plugins"
         },
         "externalAppsError": "No se pudieron cargar las apps"
+      },
+      "deleteModal": {
+        "title": "Eliminar *{name}*"
       }
     },
     "mcpSetup": {
@@ -5823,8 +5824,7 @@
           },
           "submitting": {
             "label": "Eliminando…"
-          },
-          "title": "¿Eliminar “{name}”?"
+          }
         },
         "editAction": {
           "label": "Editar"

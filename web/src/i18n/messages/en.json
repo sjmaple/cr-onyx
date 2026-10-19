@@ -235,7 +235,6 @@
         "label": "Edit Configs"
       },
       "editHeader": {
-        "description": "Update the OpenAPI schema for this action.",
         "title": "Edit OpenAPI action"
       },
       "empty": {

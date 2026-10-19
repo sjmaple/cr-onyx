@@ -235,7 +235,6 @@
         "label": "تعديل الإعدادات"
       },
       "editHeader": {
-        "description": "حدّث مخطط OpenAPI لهذا الإجراء.",
         "title": "تعديل إجراء OpenAPI"
       },
       "empty": {

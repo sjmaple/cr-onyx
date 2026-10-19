@@ -235,7 +235,6 @@
         "label": "编辑配置"
       },
       "editHeader": {
-        "description": "更新此操作的 OpenAPI 架构。",
         "title": "编辑 OpenAPI 操作"
       },
       "empty": {

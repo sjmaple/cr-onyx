@@ -235,7 +235,6 @@
         "label": "설정 편집"
       },
       "editHeader": {
-        "description": "이 액션의 OpenAPI 스키마를 업데이트합니다.",
         "title": "OpenAPI 액션 편집"
       },
       "empty": {

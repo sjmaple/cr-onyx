@@ -235,7 +235,6 @@
         "label": "設定を編集"
       },
       "editHeader": {
-        "description": "このアクションの OpenAPI スキーマを更新します。",
         "title": "OpenAPI アクションを編集"
       },
       "empty": {

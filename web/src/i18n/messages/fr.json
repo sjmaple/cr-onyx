@@ -235,7 +235,6 @@
         "label": "Modifier les configurations"
       },
       "editHeader": {
-        "description": "Mettez à jour le schéma OpenAPI de cette action.",
         "title": "Modifier l'action OpenAPI"
       },
       "empty": {

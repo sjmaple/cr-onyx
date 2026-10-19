@@ -588,7 +588,8 @@
         },
         "required": "El método de autenticación es obligatorio",
         "none": {
-          "label": "Sin autenticación"
+          "label": "Ninguna",
+          "suffix": "(No recomendado)"
         },
         "optionsTitle": "Opciones de autenticación"
       },
@@ -681,6 +682,10 @@
         "title": "Probar conexión",
         "start": "Iniciar comprobaciones",
         "testing": "Probando conexión…"
+      },
+      "noAuthNotice": {
+        "title": "Sin autenticación para este servidor",
+        "description": "No se usará autenticación para esta conexión. Asegúrate de confiar en este servidor. Eres responsable de las acciones realizadas con esta conexión."
       }
     },
     "openApiCard": {

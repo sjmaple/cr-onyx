@@ -252,14 +252,11 @@
         "description": "Im Schema gefundene URL. Verbinden Sie sich nur mit Servern, denen Sie vertrauen."
       },
       "submitButton": {
-        "addLabel": "Aktion hinzufügen",
-        "addingLabel": "Wird hinzugefügt...",
-        "saveLabel": "Änderungen speichern",
-        "savingLabel": "Wird gespeichert..."
+        "addLabel": "Hinzufügen",
+        "saveLabel": "Aktualisieren"
       },
       "toasts": {
         "actionCreated": "OpenAPI-Aktion erfolgreich erstellt",
-        "actionUpdated": "OpenAPI-Aktion erfolgreich aktualisiert",
         "createFailed": "Die OpenAPI-Aktion konnte nicht erstellt werden",
         "invalidJson": "Ungültiges JSON-Format in der Definition des OpenAPI-Schemas",
         "updateFailed": "Die OpenAPI-Aktion konnte nicht aktualisiert werden"
@@ -1171,7 +1168,14 @@
         "disableDescription": "Agenten können dieses Plugin nicht mehr verwenden. Sie können es wieder aktivieren.",
         "deleteTitle": "{name} löschen?",
         "deleteDescription": "Dadurch werden das OpenAPI-Plugin und seine Konfiguration dauerhaft gelöscht.",
-        "nameRequired": "Name ist erforderlich"
+        "nameRequired": "Name ist erforderlich",
+        "displayNameTitle": "Anzeigename",
+        "displayNameDescription": "Dient zur Identifizierung dieses Plugins in der App.",
+        "descriptionPlaceholder": "Was macht dieses Plugin?",
+        "tabs": {
+          "details": "Plugin-Details",
+          "schema": "OpenAPI-Schema"
+        }
       },
       "title": "Plugins",
       "description": "Verbinde Tools und Apps mit deinem Workspace.",

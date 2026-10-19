@@ -252,14 +252,11 @@
         "description": "스키마에서 찾은 URL입니다. 신뢰할 수 있는 서버에만 연결하세요."
       },
       "submitButton": {
-        "addLabel": "액션 추가",
-        "addingLabel": "추가하는 중...",
-        "saveLabel": "변경 사항 저장",
-        "savingLabel": "저장하는 중..."
+        "addLabel": "추가",
+        "saveLabel": "업데이트"
       },
       "toasts": {
         "actionCreated": "OpenAPI 액션을 만들었습니다",
-        "actionUpdated": "OpenAPI 액션을 업데이트했습니다",
         "createFailed": "OpenAPI 액션을 만들지 못했습니다",
         "invalidJson": "OpenAPI 스키마 정의의 JSON 형식이 잘못되었습니다",
         "updateFailed": "OpenAPI 액션을 업데이트하지 못했습니다"
@@ -1171,7 +1168,14 @@
         "disableDescription": "에이전트가 이 플러그인을 사용할 수 없게 됩니다. 나중에 다시 활성화할 수 있습니다.",
         "deleteTitle": "{name}을(를) 삭제할까요?",
         "deleteDescription": "OpenAPI 플러그인과 해당 설정을 영구적으로 삭제합니다.",
-        "nameRequired": "이름은 필수입니다"
+        "nameRequired": "이름은 필수입니다",
+        "displayNameTitle": "표시 이름",
+        "displayNameDescription": "앱에서 이 플러그인을 식별하는 데 사용됩니다.",
+        "descriptionPlaceholder": "이 플러그인은 어떤 일을 하나요?",
+        "tabs": {
+          "details": "플러그인 세부 정보",
+          "schema": "OpenAPI 스키마"
+        }
       },
       "title": "플러그인",
       "description": "도구와 앱을 워크스페이스에 연결하세요.",

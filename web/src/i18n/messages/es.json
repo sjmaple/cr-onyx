@@ -1175,14 +1175,14 @@
         "disableDescription": "Los agentes ya no podrán usar este plugin. Puedes volver a activarlo.",
         "deleteTitle": "¿Eliminar {name}?",
         "deleteDescription": "Esto elimina permanentemente el plugin OpenAPI y su configuración.",
-        "nameRequired": "El nombre es obligatorio",
         "displayNameTitle": "Nombre visible",
-        "displayNameDescription": "Se usa para identificar este plugin en la aplicación.",
+        "displayNameDescription": "Se usa para identificar este plugin en la aplicación. Si no se indica, se usa el nombre del esquema.",
         "descriptionPlaceholder": "¿Qué hace este plugin?",
         "tabs": {
           "details": "Detalles del plugin",
           "schema": "Esquema OpenAPI"
-        }
+        },
+        "descriptionDescription": "Si no se indica, se usa la descripción del esquema."
       },
       "title": "Plugins",
       "description": "Conecta herramientas y aplicaciones a tu espacio de trabajo.",

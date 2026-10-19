@@ -1175,14 +1175,14 @@
         "disableDescription": "에이전트가 이 플러그인을 사용할 수 없게 됩니다. 나중에 다시 활성화할 수 있습니다.",
         "deleteTitle": "{name}을(를) 삭제할까요?",
         "deleteDescription": "OpenAPI 플러그인과 해당 설정을 영구적으로 삭제합니다.",
-        "nameRequired": "이름은 필수입니다",
         "displayNameTitle": "표시 이름",
-        "displayNameDescription": "앱에서 이 플러그인을 식별하는 데 사용됩니다.",
+        "displayNameDescription": "앱에서 이 플러그인을 식별하는 데 사용됩니다. 지정하지 않으면 스키마의 이름이 사용됩니다.",
         "descriptionPlaceholder": "이 플러그인은 어떤 일을 하나요?",
         "tabs": {
           "details": "플러그인 세부 정보",
           "schema": "OpenAPI 스키마"
-        }
+        },
+        "descriptionDescription": "지정하지 않으면 스키마의 설명이 사용됩니다."
       },
       "title": "플러그인",
       "description": "도구와 앱을 워크스페이스에 연결하세요.",

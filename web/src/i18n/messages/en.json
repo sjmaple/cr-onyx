@@ -235,7 +235,8 @@
         "label": "Edit Configs"
       },
       "editHeader": {
-        "title": "Edit OpenAPI action"
+        "title": "Edit *{name}*",
+        "description": "Edit OpenAPI schema to edit custom actions."
       },
       "empty": {
         "description": "Provide OpenAPI schema to preview actions here.",
@@ -1169,7 +1170,8 @@
         "disableTitle": "Disable {name}?",
         "disableDescription": "Agents will no longer be able to use this plugin. You can enable it again.",
         "deleteTitle": "Delete {name}?",
-        "deleteDescription": "This permanently deletes the OpenAPI plugin and its configuration."
+        "deleteDescription": "This permanently deletes the OpenAPI plugin and its configuration.",
+        "nameRequired": "Name is required"
       },
       "title": "Plugins",
       "description": "Connect tools and apps to your workspace.",

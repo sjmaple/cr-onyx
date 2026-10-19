@@ -235,7 +235,8 @@
         "label": "Editar configurações"
       },
       "editHeader": {
-        "title": "Editar ação OpenAPI"
+        "title": "Editar *{name}*",
+        "description": "Edite o esquema OpenAPI para editar ações personalizadas."
       },
       "empty": {
         "description": "Forneça um esquema OpenAPI para pré-visualizar as ações aqui.",
@@ -1169,7 +1170,8 @@
         "disableTitle": "Desativar {name}?",
         "disableDescription": "Os agentes não poderão mais usar este plugin. Você pode ativá-lo novamente.",
         "deleteTitle": "Excluir {name}?",
-        "deleteDescription": "Isso exclui permanentemente o plugin OpenAPI e sua configuração."
+        "deleteDescription": "Isso exclui permanentemente o plugin OpenAPI e sua configuração.",
+        "nameRequired": "O nome é obrigatório"
       },
       "title": "Plugins",
       "description": "Conecte ferramentas e aplicativos ao seu espaço de trabalho.",

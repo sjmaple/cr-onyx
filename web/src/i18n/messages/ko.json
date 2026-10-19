@@ -235,7 +235,8 @@
         "label": "설정 편집"
       },
       "editHeader": {
-        "title": "OpenAPI 액션 편집"
+        "title": "*{name}* 편집",
+        "description": "OpenAPI 스키마를 편집하여 사용자 지정 작업을 편집하세요."
       },
       "empty": {
         "description": "OpenAPI 스키마를 입력하면 여기에서 액션을 미리 볼 수 있습니다.",
@@ -1169,7 +1170,8 @@
         "disableTitle": "{name}을(를) 비활성화할까요?",
         "disableDescription": "에이전트가 이 플러그인을 사용할 수 없게 됩니다. 나중에 다시 활성화할 수 있습니다.",
         "deleteTitle": "{name}을(를) 삭제할까요?",
-        "deleteDescription": "OpenAPI 플러그인과 해당 설정을 영구적으로 삭제합니다."
+        "deleteDescription": "OpenAPI 플러그인과 해당 설정을 영구적으로 삭제합니다.",
+        "nameRequired": "이름은 필수입니다"
       },
       "title": "플러그인",
       "description": "도구와 앱을 워크스페이스에 연결하세요.",

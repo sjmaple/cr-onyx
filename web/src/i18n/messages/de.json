@@ -235,7 +235,8 @@
         "label": "Konfiguration bearbeiten"
       },
       "editHeader": {
-        "title": "OpenAPI-Aktion bearbeiten"
+        "title": "*{name}* bearbeiten",
+        "description": "Bearbeiten Sie das OpenAPI-Schema, um benutzerdefinierte Aktionen zu bearbeiten."
       },
       "empty": {
         "description": "Geben Sie ein OpenAPI-Schema an, um hier eine Vorschau der Aktionen zu sehen.",
@@ -1169,7 +1170,8 @@
         "disableTitle": "{name} deaktivieren?",
         "disableDescription": "Agenten können dieses Plugin nicht mehr verwenden. Sie können es wieder aktivieren.",
         "deleteTitle": "{name} löschen?",
-        "deleteDescription": "Dadurch werden das OpenAPI-Plugin und seine Konfiguration dauerhaft gelöscht."
+        "deleteDescription": "Dadurch werden das OpenAPI-Plugin und seine Konfiguration dauerhaft gelöscht.",
+        "nameRequired": "Name ist erforderlich"
       },
       "title": "Plugins",
       "description": "Verbinde Tools und Apps mit deinem Workspace.",

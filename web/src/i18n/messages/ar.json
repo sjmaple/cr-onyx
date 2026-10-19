@@ -235,7 +235,8 @@
         "label": "تعديل الإعدادات"
       },
       "editHeader": {
-        "title": "تعديل إجراء OpenAPI"
+        "title": "تعديل *{name}*",
+        "description": "عدّل مخطط OpenAPI لتعديل الإجراءات المخصصة."
       },
       "empty": {
         "description": "قدّم مخطط OpenAPI لمعاينة الإجراءات هنا.",
@@ -1169,7 +1170,8 @@
         "disableTitle": "تعطيل {name}؟",
         "disableDescription": "لن تتمكن الوكلاء من استخدام هذه الإضافة. يمكنك تفعيلها مجددًا.",
         "deleteTitle": "حذف {name}؟",
-        "deleteDescription": "سيؤدي ذلك إلى حذف إضافة OpenAPI وإعداداتها نهائيًا."
+        "deleteDescription": "سيؤدي ذلك إلى حذف إضافة OpenAPI وإعداداتها نهائيًا.",
+        "nameRequired": "الاسم مطلوب"
       },
       "title": "الإضافات",
       "description": "اربط الأدوات والتطبيقات بمساحة عملك.",

@@ -235,7 +235,8 @@
         "label": "编辑配置"
       },
       "editHeader": {
-        "title": "编辑 OpenAPI 操作"
+        "title": "编辑 *{name}*",
+        "description": "编辑 OpenAPI 架构以编辑自定义操作。"
       },
       "empty": {
         "description": "提供 OpenAPI 架构后即可在此预览操作。",
@@ -1169,7 +1170,8 @@
         "disableTitle": "停用 {name}？",
         "disableDescription": "智能体将无法再使用此插件。你可以重新启用它。",
         "deleteTitle": "删除 {name}？",
-        "deleteDescription": "这会永久删除 OpenAPI 插件及其配置。"
+        "deleteDescription": "这会永久删除 OpenAPI 插件及其配置。",
+        "nameRequired": "名称为必填项"
       },
       "title": "插件",
       "description": "将工具和应用连接到你的工作区。",
